@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 81, 249);
+    color: white;
+    align-items: center;
+    height:70px ;
+    padding: 0 20px;
+}
+nav div{
+    display: flex;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+align-items: center;
+margin: 20px 0;
+}
+.pub{
+    width: 80%;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 10px ;
+
+}
+
+.addpost{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.434);
+    margin: auto;
+}
+
+.addpost div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addpost input{
+    width: 90%;
+    height: 50px;
+
+}
+.pub{
+    margin: 20px;
+    border:1px;
+    border-radius: 5px;
+    width: 68%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.repence{
+    margin: 20px;
+    border:1px;
+    border-radius: 5px;
+    width: 70%;
+    height: 100px;
+    background-color: antiquewhite;
+}
+.fromCom{
+    background-color: rgb(15, 132, 228);
+    width: 68%;
+    height: 190px;
+    border-radius: 10px;
+    margin: 20px;
+}

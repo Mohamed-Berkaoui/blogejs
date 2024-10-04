@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <%- include('./nav.ejs') %>
+
+    <div class="container">
+        <% publications.forEach(pub => { %>
+            <div class="pub">
+                <h3><%= pub.user %></h3>
+             <a href="/pub/<%= pub._id %>">   <p><%= pub.post %></p></a>
+            </div>
+         
+        <% }) %>
+
+    </div>
+
+    
+</body>
+</html>

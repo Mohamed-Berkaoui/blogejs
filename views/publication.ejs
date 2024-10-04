@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./nav.ejs') %>
+    
+
+    <div class="pub">
+        <h1><%= pub.user %></h1>
+        <p><%= pub.post %></p>
+    </div>
+<% if (comments.length<1) { %>
+ <h1>no comments</h1>
+
+<% } else { %>
+    <div class="repence">
+        <% comments.forEach(comment => { %>
+            <div>
+                <h1><%= comment.user %></h1>
+                <p><%= comment.comment %></p>
+            </div>
+        <% }) %>
+       
+        
+    </div>
+    <% } %>
+    <form action="/addcomment/<%= pub._id %>" method="post" class ="fromCom">
+        <h2>add comment</h2>
+        <div>
+            <label for="">user</label>
+            <input type="text" name="user">
+        </div>
+        <div>
+            <label for="">comment</label>
+            <input type="text" name="comment">
+        </div>
+        <button type="submit">add comment</button>
+    </form>
+
+</body>
+</html>
